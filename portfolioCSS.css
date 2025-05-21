@@ -112,7 +112,7 @@ section{
 
  #button{
   display: block;
-  margin-top: 2rem;
+  margin: 2rem;
 
 }
  #button a{
@@ -528,4 +528,121 @@ footer{
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+
+/* Fix syntax: add space after 'and' in media queries */
+@media screen and (max-width: 900px) {
+  .about, .Goals, .Goals-right, .Testimonials {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .info, #Goals-text, #Goals-img, #Goals-right-text, #Goals-right-img, .image {
+    width: 100%;
+    min-width: unset;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .projects {
+    margin: 1em 0 0 0;
+    padding: 1em;
+  }
+  .Testimonial-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Mobile: stack navigation and footer, adjust paddings and font sizes */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  .navigation, .navbar nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar nav ul li {
+    float: none;
+    width: 100%;
+  }
+  .navbar nav ul li a {
+    text-align: left;
+    padding: 12px 8px;
+  }
+  section, main {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0;
+  }
+  .about, .Goals, .Goals-right, .Testimonials {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+  .info, #Goals-text, #Goals-img, #Goals-right-text, #Goals-right-img, .image {
+    width: 100%;
+    min-width: unset;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #Goals-img img, #Goals-right-img img {
+    height: auto;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  #service-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #services #headers p {
+    padding: 1rem 0.5rem;
+  }
+  .Testimonial {
+    padding-top: 2rem;
+    height: auto;
+  }
+  .Testimonials {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+  .first-testimonial {
+    position: static;
+    margin: 1rem 0;
+    min-width: unset;
+  }
+  .image-wrapper, .image-wrapper img {
+    width: 6rem;
+    height: 6rem;
+  }
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0.5rem;
+    border-radius: 0;
+  }
+  .firstpart, .secondpart, .thirdpart {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+  }
+}
+
+/* Fix typo in your existing media query */
+@media screen and (max-width: 500px) {
+  .firstpart {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+  }
 }
