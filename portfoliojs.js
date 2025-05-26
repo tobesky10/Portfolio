@@ -18,3 +18,24 @@ function changeSlide(n) {
     imgs[currentImg].style.opacity = 1;
     dots[currentImg].className += ' active';
   }
+
+ document.addEventListener("DOMContentLoaded", () => {
+  const projectCards = document.querySelectorAll(".project-card");
+
+  const observerOptions = {
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  projectCards.forEach(card => {
+    observer.observe(card);
+  });
+});
