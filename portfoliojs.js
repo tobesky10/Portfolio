@@ -19,23 +19,25 @@ function changeSlide(n) {
     dots[currentImg].className += ' active';
   }
 
- document.addEventListener("DOMContentLoaded", () => {
-  const projectCards = document.querySelectorAll(".project-card");
+ 
+  document.addEventListener("DOMContentLoaded", () => {
+    const projectCards = document.querySelectorAll(".project-card");
 
-  const observerOptions = {
-    threshold: 0.1
-  };
+    const revealOnScroll = () => {
+      const windowHeight = window.innerHeight;
+      projectCards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        const revealPoint = 150; // Adjust this value for when animation triggers
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
+        if (cardTop < windowHeight - revealPoint) {
+          card.classList.add("visible");
+        }
+      });
+    };
 
-  projectCards.forEach(card => {
-    observer.observe(card);
+    // Run on scroll and on initial load
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
   });
-});
+
+
