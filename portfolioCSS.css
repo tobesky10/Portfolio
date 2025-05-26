@@ -240,7 +240,7 @@ main{
 
 /* Project Card */
 .project-card {
-  opacity: 1;
+ /* opacity: 1; */
   transform: translateY(30px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   background-color: #fff;
@@ -251,10 +251,11 @@ main{
   flex-direction: column;
 }
 
-.project-card.visible {
+/*.project-card.visible {
   opacity: 1;
   transform: translateY(0);
 }
+*/
 
 /* Project Image */
 .project-image {
