@@ -129,7 +129,7 @@ section{
 }
  #button a:hover{
   background-color: #1f1c24;
-  transform: scale(2,2);
+  transform: scale(1.2,1.2);
   transition: 900ms;  
   transition: color .3s, transform .3s, box-shadow .3s, background-color .3s;
 }
