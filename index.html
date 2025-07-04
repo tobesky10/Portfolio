@@ -1,260 +1,348 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Emmanuel Udeozor's portfolio showcasing projects, skills, and testimonials." />
+  <title>Emmanuel Udeozor - Portfolio</title>
 
-<html>
-    <head>
-        
-        <title>My Portfolio</title>
-        <meta name="description" content="">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="portfolioCSS.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-        
-    </head>
-    <body>    
-            
-        <header>
-            <div class="navigation">
-                <div style="font-size: 3em; margin-left: 2rem; ">EU</div>
-                <div class="navbar">
-                    <nav>
-                        <ul>
-                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>menu</svg></a></li>
-                            <li><a href="#"> Home</a> </li>
+  <!-- Ionicons for social icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    integrity="sha512-1p+uX+4Y0Qq1aVnq0d7Q9v7tH8yZr6f9XqLk+g0uFZf7+Tb8j9xQ6rQ6K5JQ5P9VZ5jJ6Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="portfolioCSS.css" />
+</head>
+<body>
+  <header>
+    <div class="navigation">
+  <div class="logo" aria-label="Logo">EU</div>
 
-                            <li><a href="#"> About</a> </li>
-                            <li><a href="#services"> Services</a> </li>
-                            <li><a href="#"> Projects</a> </li>
-                            <li><a href="#Testimonial"> Testimonial</a> </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="mailcontact">
-                    <a href="mailto:emmanueludeozor0@gmail.com">
-                    <img src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112a4fa0865622bd03376a4_email-icon-personal-x-template.svg" alt="Email Icon">
-                    emmanueludeozor0@gmail.com</a>
-                </div>
-                <div class="open-menu><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>  </div>
+  <!-- Mobile menu toggle button -->
+  <button
+    class="menu-toggle"
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="primary-navigation"
+  >
+    <span class="hamburger"></span>
+  </button>
+
+  <!-- Navigation menu -->
+  <nav class="navbar" id="primary-navigation" aria-label="Primary Navigation">
+    <ul>
+      
+      <li><a href="#" aria-current="page">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#testimonial">Testimonials</a></li>
+    </ul>
+  </nav>
+
+  <div class="mailcontact">
+    <a href="mailto:emmanueludeozor0@gmail.com" aria-label="Send email to Emmanuel Udeozor">
+      <img
+        src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112a4fa0865622bd03376a4_email-icon-personal-x-template.svg"
+        alt="Email Icon"
+        width="24"
+        height="24"
+        loading="lazy"
+      />
+      emmanueludeozor0@gmail.com
+    </a>
+  </div>
+</div>
+
+
+    <section id="about" class="about">
+      <div class="info">
+        <h1>Hey, I'm Emmanuel Udeozor</h1>
+        <h2>I enjoy designing tech websites and digital products</h2>
+        <img
+          src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112b0068db0b60858060db4_hero-underline-personal-x-template.svg"
+          alt="Underline decoration"
+          class="hero-underline"
+          loading="lazy"
+        />
+        <div class="btn-container">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="image">
+        <img src="Images/Mypic.png" alt="Picture of Emmanuel Udeozor" loading="lazy" />
+      </div>
+    </section>
+
+    <div class="social" aria-label="Social media links">
+      <a href="https://instagram.com/udeozoremmanuel" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="icon ion-social-instagram"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+        <i class="icon ion-social-twitter"></i>
+      </a>
+      <a href="https://wa.me/09086297246" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="icon ion-social-whatsapp"></i>
+      </a>
+      <a href="https://m.me/tochukwu.udeozor" target="_blank" rel="noopener noreferrer" aria-label="Facebook Messenger">
+        <i class="icon ion-social-facebook"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="icon ion-social-linkedin"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <img src="e-commerceHomePage.png" alt="Screenshot of Futo E-Commerce project" class="project-image" loading="lazy" />
+            <div class="project-content">
+              <h3 class="project-title">Futo E-Commerce</h3>
+              <p class="project-description">
+                This is an E-commerce web application built with Python, Django, Core HTML, CSS, JS, TypeScript, and PostgreSQL.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/tobesky10/FutoSquare-ecommerce" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+                <a href="https://project-one-demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
+              </div>
             </div>
-            
-            
-            <section>
-                
-                 <div class="about">
-                    <div class="info"><h1 style="font-family:'Satoshi', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 400; font-size: 2rem;">Hey, I'm Emmanuel Udeozor </h1>
-                         <h3 style="font-family: 'Satoshi','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight: 700; font-size: 4rem; line-height: 1.3em;"> I enjoy designing tech websites and digital products</h3>
-                            <img src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112b0068db0b60858060db4_hero-underline-personal-x-template.svg" loading="eager" alt="" class="image hero-underline">
-                            <div id="button"> <a href="#contact"> Get in touch</a>  </div>
-                    </div>
-                    
-                        <div class="image">
-                            <img src="Mypic.png" alt="Author's picture">
-                        </div>
-                          
-                </div>
-                    
-                        
-            </section>
-            <div class="social">
-                            <!-- insert github link -->
-                            <a href="https://instagram.com/udeozoremmanuel" target="_blank"><i class="icon ion-social-instagram"></i></a>
-                            <a href="#" target="_blank"><i class="icon ion-social-twitter"></i></a>
-                            <a href=" https://wa.me/09086297246" target="_blank"><i class="icon ion-social-whatsapp"></i></a>
-                            <a href="https://m.me/tochukwu.udeozor" target="_blank"><i class="icon ion-social-facebook"></i></a>
-                            <a href="#" target="_blank"><i class="icon ion-social-linkedin"></i></a>
-                        </div>
-        </header>
-        <main>
+          </article>
 
-            <div>
-               <section id="projects" class="projects-section">
-                <div class="container">
-                <h2 class="section-title">My Project</h2>
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                    <img src="e-commerceHomePage.png" alt="Project 1 Screenshot" class="project-image" />
-                    <div class="project-content">
-                        <h3 class="project-title">Futo E-Commerce</h3>
-                        <p class="project-description">
-                        This is an E-commerce web application built with Python, Django, Core HTML,CSS, JS, TypeScript, and PostgreSQL.
-                        </p>
-                        <div class="project-links">
-                        <a href="https://github.com/tobesky10/FutoSquare-ecommerce" target="_blank" rel="noopener" class="btn">GitHub</a>
-                        <a href="https://project-one-demo.com" target="_blank" rel="noopener" class="btn btn-primary">Live Demo</a>
-                        </div>
-                    </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                    <img src="APIHomePage.PNG" alt="Project 2 Screenshot" class="project-image" />
-                    <div class="project-content">
-                        <h3 class="project-title"NY Times API</h3>
-                        <p class="project-description">
-                        This is a New York Times API website built using vanila JS to show my familiarity with working with APIs
-                        </p>
-                        <div class="project-links">
-                        <a href="https://github.com/tobesky10/Newyork-Times-API" target="_blank" rel="noopener" class="btn">GitHub</a>
-                        <a href="https://project-two-demo.com" target="_blank" rel="noopener" class="btn btn-primary">Live Demo</a>
-                        </div>
-                    </div>
-                    </div>
-
-                    <!-- Add more projects as needed -->
-                </div>
-                </div>
-                </section>
-
-                <div class="Goals">
-                    <div id="Goals-img">
-                        <img src="Ourgoals.jpeg" alt="sample pic">
-                    </div>
-                    <div id="Goals-text">
-                        <h2 style="padding-bottom: 2rem; font-size:2.5rem; font-weight: 800;">Our Goals</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            adipisicing elit. Ea delectus, laudantium nemo quisquam, quo numquam
-                            Sequi placeat ullam, incidunt quis </p>
-                        <div id="button"> <a href="#contact"> Get in touch</a>  </div>
-                    </div>
-                </div>
-                <div class="Goals-right">
-                    <div id="Goals-right-text">
-                        <h2 style="padding-bottom: 2rem; font-size:2.5rem; font-weight: 800;">About Me</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Sequi placeat ullam, incidunt quis Lorem ipsum dolor sit amet consectetur
-                             adipisicing elit. Ea delectus, laudantium nemo quisquam, quo numquam molestias
-                    
-                        <div id="button"> <a href="#contact"> Get in touch</a>  </div>
-                    </div>
-                    <div id="Goals-right-img">
-                        <img src="rightman.avif" alt="sample pic">
-                    </div>
-                    
-                </div>
-                    
-                <div id="services" >
-                    <div id="headers">
-                         <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 700; font-size: 2.5rem;"> My Services</h2>
-                         <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum enim exercitationem illo, fugiat distinctio velit alias. Beatae debitis consequuntur aperiam, corporis.</p>
-                    </div>
-                    <div id="service-content">
-                        <div><img src="frontend.png" alt="Frontend Technologies"> <h4>Frontend Technologies</h4></div>
-                        <div><img src="database.png" alt="Database"><h4>Database Management</h4> </div>
-                        <div><img src="server.png" alt="Backend"> <h4>Backend Development</h4></div>
-                        <div><img src="python prog.jpg" alt="python"> <h4>Python Programming Language</h4></div>
-
-                    </div>
-                    
-                        
-                </div>
-
-                <div class=" Testimonial">
-                                    <h2> What my clients say about my work</h2>
-                    <div class="Testimonials" >
-                            
-                        <div class="first-testimonial">
-                        <div class="image-wrapper">
-                            <img src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112d97fc530f849d9560f0f_testimonial-client-sophie-moore-personal-x-template.png" alt="Testimonial - You X Webflow Template" sizes="(max-width: 767px) 238px, (max-width: 1439px) 32vw, 374px" srcset="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112d97fc530f849d9560f0f_testimonial-client-sophie-moore-personal-x-template-p-500.png 500w, https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112d97fc530f849d9560f0f_testimonial-client-sophie-moore-personal-x-template.png 734w" class="image testimonial-client-avatar">
-                        </div>
-
-                        <div class="Testimonial-text">
-                            <p> <q>This is an example of a FIRST testimonial that has a length of less than 
-                            500 words but more than 30 words. This testimonial would be the first of many to come.</p>
-                            </q><br>
-                            <p>Tony Everest</p>
-                            <img src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/61140780d72abbf65771d050_resume-underline-personal-x-template.svg" alt="" class="image resume-underline">                                
-                        </div>
-                        </div>
-                    
-                        <div class="first-testimonial" style="display: none;">
-                        <div class="image-wrapper">
-                            <img src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112d97fe8aca0e4200fc8a3_testimonial-client-sam-owen-personal-x-template.png" alt="Testimonial - You X Webflow Template" sizes="(max-width: 767px) 238px, (max-width: 1439px) 32vw, 374px" srcset="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112d97fe8aca0e4200fc8a3_testimonial-client-sam-owen-personal-x-template-p-500.png 500w, https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112d97fe8aca0e4200fc8a3_testimonial-client-sam-owen-personal-x-template.png 734w" class="image testimonial-client-avatar">
-                        </div>
-
-                        <div class="Testimonial-text">
-                            <p><q>This is an example of a SECOND testimonial that has a length of less than 
-                            500 words but more than 30 words. This testimonial would be the first of many to come.</q></p>
-                            <br>
-                            <p>Mikky Minaj</p>
-                            <img src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/61140780d72abbf65771d050_resume-underline-personal-x-template.svg" alt="" class="image resume-underline">                                
-
-                        </div>
-                        </div>
-
-                        <div class="first-testimonial" style="display: none;">
-                        <div class="image-wrapper">
-                            <img src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112d97f2cf0705b6b0381bd_testimonial-client-matt-cannon-personal-x-template.png" alt="Testimonial - You X Webflow Template" class="image testimonial-client-avatar">
-                        </div>
-
-                        <div class="Testimonial-text">
-                            <p><q>This is an example of a THIRD testimonial that has a length of less than 
-                            500 words but more than 30 words. This testimonial would be the first of many to come.</q></p>
-                            <br>
-                            <p>Luke Hemsworth</p>
-                            <img src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/61140780d72abbf65771d050_resume-underline-personal-x-template.svg" alt="" class="image resume-underline">                                
-
-                        </div>
-                        </div>
-                        
-                    </div>
-                                  
-                </div>
-                        <div class="navigation-button">
-                            <span class="dot active" onclick="changeSlide(0)"></span>
-                            <span class="dot" onclick="changeSlide(1)"></span>
-                            <span class="dot" onclick="changeSlide(2)"></span>
-                          </div>
-
-            </div>            
-            
-        </main>
-
-        <footer>
-            <div class="firstpart">
-                <div><h2>EU</h2> </div>
-                <div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in similique laudantium quam animi voluptatem asperiorionem nostrum.</p></div>
-
-                <div class="social">
-                    <!-- insert github link -->
-                    <a href="https://instagram.com/udeozoremmanuel" target="_blank"><i class="icon ion-social-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="icon ion-social-twitter"></i></a>
-                    <a href=" https://wa.me/09086297246" target="_blank"><i class="icon ion-social-whatsapp"></i></a>
-                    <a href="https://m.me/tochukwu.udeozor" target="_blank"><i class="icon ion-social-facebook"></i></a>
-                    <a href="#" target="_blank"><i class="icon ion-social-linkedin"></i></a>
-                </div>
+          <!-- Project 2 -->
+          <article class="project-card">
+            <img src="APIHomePage.PNG" alt="Screenshot of NY Times API project" class="project-image" loading="lazy" />
+            <div class="project-content">
+              <h3 class="project-title">NY Times API</h3>
+              <p class="project-description">
+                This is a New York Times API website built using vanilla JS to show my familiarity with working with APIs.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/tobesky10/Newyork-Times-API" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+                <a href="https://project-two-demo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
+              </div>
             </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-            <div class="secondpart">
-                <h2 style="margin-bottom: 1rem;">Pages</h2>
-                
-                    <ul>
-                        <li><a href="#"> Home</a> </li>
-                        <li><a href="#"> About</a> </li>
-                        <li><a href="#services"> Services</a> </li>
-                        <li><a href="#"> Projects</a> </li>
-                        <li><a href="#Testimonial"> Testimonial</a> </li>
-                    </ul>
-                
-            </div>
+    <!-- Goals Section -->
+    <section class="goals-section">
+      <div class="goals">
+        <div class="goals-image">
+          <img src="Images/Ourgoals.jpeg" alt="Our goals illustration" loading="lazy" />
+        </div>
+        <div class="goals-text">
+          <h2>Our Goals</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea delectus, laudantium nemo quisquam, quo numquam sequi placeat ullam, incidunt quis.
+          </p>
+          <div class="btn-container">
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+          </div>
+        </div>
+      </div>
 
-            <div class="thirdpart">
-                <h2>Contact Me</h2>
-                <div class="mailcontact">
-                    <a href="mailto:emmanueludeozor0@gmail.com">
-                    <img src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112a4fa0865622bd03376a4_email-icon-personal-x-template.svg" alt="Email Icon">
-                    emmanueludeozor0@gmail.com</a>
-                </div>
-                <p style="padding-left: 1rem;">(+234)8153529369</p>
+      <div class="goals goals-right">
+        <div class="goals-text">
+          <h2>About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi placeat ullam, incidunt quis Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus, laudantium nemo quisquam, quo numquam molestias.
+          </p>
+          <div class="btn-container">
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+          </div>
+        </div>
+        <div class="goals-image">
+          <img src="Images/rightman.avif" alt="About me illustration" loading="lazy" />
+        </div>
+      </div>
+    </section>
 
-            </div>
-            
-        
-        
-        </footer>
-        
-        <script src="portfoliojs.js" async defer></script>
-    </body>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="section-header">
+        <h2>My Services</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum enim exercitationem illo, fugiat distinctio velit alias. Beatae debitis consequuntur aperiam, corporis.
+        </p>
+      </div>
+      <div class="service-content">
+        <div class="service-item">
+          <img src="frontend.png" alt="Frontend Technologies" loading="lazy" />
+          <h4>Frontend Technologies</h4>
+        </div>
+        <div class="service-item">
+          <img src="database.png" alt="Database Management" loading="lazy" />
+          <h4>Database Management</h4>
+        </div>
+        <div class="service-item">
+          <img src="server.png" alt="Backend Development" loading="lazy" />
+          <h4>Backend Development</h4>
+        </div>
+        <div class="service-item">
+          <img src="python prog.jpg" alt="Python Programming Language" loading="lazy" />
+          <h4>Python Programming Language</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="testimonial-section">
+      <h2>What my clients say about my work</h2>
+      <div class="testimonials-container">
+        <article class="testimonial first-testimonial" aria-live="polite">
+          <div class="image-wrapper">
+            <img
+              src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112d97fc530f849d9560f0f_testimonial-client-sophie-moore-personal-x-template.png"
+              alt="Photo of Tony Everest"
+              loading="lazy"
+              width="160"
+              height="160"
+            />
+          </div>
+          <div class="testimonial-text">
+            <p>
+              <q>This is an example of a FIRST testimonial that has a length of less than 500 words but more than 30 words. This testimonial would be the first of many to come.</q>
+            </p>
+            <p class="client-name">Tony Everest</p>
+            <img
+              src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/61140780d72abbf65771d050_resume-underline-personal-x-template.svg"
+              alt=""
+              class="underline-image"
+              loading="lazy"
+              width="112"
+              height="24"
+            />
+          </div>
+        </article>
+
+        <article class="testimonial" style="display: none;">
+          <div class="image-wrapper">
+            <img
+              src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112d97fe8aca0e4200fc8a3_testimonial-client-sam-owen-personal-x-template.png"
+              alt="Photo of Mikky Minaj"
+              loading="lazy"
+              width="160"
+              height="160"
+            />
+          </div>
+          <div class="testimonial-text">
+            <p>
+              <q>This is an example of a SECOND testimonial that has a length of less than 500 words but more than 30 words. This testimonial would be the first of many to come.</q>
+            </p>
+            <p class="client-name">Mikky Minaj</p>
+            <img
+              src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/61140780d72abbf65771d050_resume-underline-personal-x-template.svg"
+              alt=""
+              class="underline-image"
+              loading="lazy"
+              width="112"
+              height="24"
+            />
+          </div>
+        </article>
+
+        <article class="testimonial" style="display: none;">
+          <div class="image-wrapper">
+            <img
+              src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112d97f2cf0705b6b0381bd_testimonial-client-matt-cannon-personal-x-template.png"
+              alt="Photo of Luke Hemsworth"
+              loading="lazy"
+              width="160"
+              height="160"
+            />
+          </div>
+          <div class="testimonial-text">
+            <p>
+              <q>This is an example of a THIRD testimonial that has a length of less than 500 words but more than 30 words. This testimonial would be the first of many to come.</q>
+            </p>
+            <p class="client-name">Luke Hemsworth</p>
+            <img
+              src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/61140780d72abbf65771d050_resume-underline-personal-x-template.svg"
+              alt=""
+              class="underline-image"
+              loading="lazy"
+              width="112"
+              height="24"
+            />
+          </div>
+        </article>
+      </div>
+
+      <div class="navigation-button" role="tablist" aria-label="Testimonial navigation">
+        <button class="dot active" role="tab" aria-selected="true" aria-controls="testimonial1" tabindex="0" aria-label="Show testimonial 1" onclick="changeSlide(0)"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-controls="testimonial2" tabindex="-1" aria-label="Show testimonial 2" onclick="changeSlide(1)"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-controls="testimonial3" tabindex="-1" aria-label="Show testimonial 3" onclick="changeSlide(2)"></button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-section firstpart">
+      <h2>EU</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in similique laudantium quam animi voluptatem asperiorionem nostrum.
+      </p>
+      <div class="social" aria-label="Social media links">
+        <a href="https://instagram.com/udeozoremmanuel" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="icon ion-social-instagram"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <i class="icon ion-social-twitter"></i>
+        </a>
+        <a href="https://wa.me/09086297246" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <i class="icon ion-social-whatsapp"></i>
+        </a>
+        <a href="https://m.me/tochukwu.udeozor" target="_blank" rel="noopener noreferrer" aria-label="Facebook Messenger">
+          <i class="icon ion-social-facebook"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="icon ion-social-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-section secondpart">
+      <h2>Pages</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonial">Testimonials</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section thirdpart">
+      <h2>Contact Me</h2>
+      <div class="mailcontact">
+        <a href="mailto:emmanueludeozor0@gmail.com" aria-label="Send email to Emmanuel Udeozor">
+          <img
+            src="https://assets-global.website-files.com/61129bb2ecedf803564c68ec/6112a4fa0865622bd03376a4_email-icon-personal-x-template.svg"
+            alt="Email Icon"
+            width="24"
+            height="24"
+            loading="lazy"
+          />
+          emmanueludeozor0@gmail.com
+        </a>
+      </div>
+      <p>(+234) 815 352 9369</p>
+    </div>
+  </footer>
+
+  <script src="portfoliojs.js" defer></script>
+</body>
 </html>
-
